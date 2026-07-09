@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane fx:id="practiceWordsPane"
+           dividerPositions="0.12"
+           maxHeight="-Infinity"
+           maxWidth="-Infinity"
+           minHeight="-Infinity"
+           minWidth="-Infinity"
+           prefHeight="700.0"
+           prefWidth="1010.0"
+           xmlns="http://javafx.com/javafx/23.0.1"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="dev.cyberjar.springfx.controller.PracticeWordsController">
+
+    <items>
+        <fx:include source="toolbar.fxml" />
+
+        <AnchorPane minHeight="0.0"
+                    minWidth="0.0"
+                    style="-fx-background-color: #FFFFFF;">
+
+            <children>
+                <Label fx:id="titleLabel"
+                       text="Practice words"
+                       AnchorPane.leftAnchor="20.0"
+                       AnchorPane.rightAnchor="20.0"
+                       AnchorPane.topAnchor="15.0">
+                    <font>
+                        <Font size="26.0" />
+                    </font>
+                </Label>
+
+                <VBox fx:id="selectionView"
+                      spacing="14.0"
+                      AnchorPane.leftAnchor="20.0"
+                      AnchorPane.rightAnchor="20.0"
+                      AnchorPane.topAnchor="70.0"
+                      AnchorPane.bottomAnchor="20.0">
+
+                    <padding>
+                        <Insets top="10.0" right="10.0" bottom="10.0" left="10.0" />
+                    </padding>
+
+                    <Label text="Choose the words you want to practice." />
+
+                    <HBox spacing="10.0">
+                        <children>
+                            <Button text="Select all"
+                                    onAction="#selectAllWords" />
+
+                            <Button text="Deselect all"
+                                    onAction="#deselectAllWords" />
+                        </children>
+                    </HBox>
+
+                    <Label fx:id="selectionErrorLabel"
+                           minHeight="24.0" />
+
+                    <TableView fx:id="wordsTable"
+                               editable="true"
+                               prefWidth="612.0"
+                               maxWidth="612.0"
+                               prefHeight="360.0">
+
+                        <columns>
+                            <TableColumn fx:id="selectedColumn"
+                                         text=""
+                                         prefWidth="50.0"
+                                         minWidth="50.0"
+                                         maxWidth="50.0"
+                                         editable="true" />
+
+                            <TableColumn fx:id="termColumn"
+                                         text="Word"
+                                         prefWidth="180.0"
+                                         minWidth="180.0"
+                                         maxWidth="180.0" />
+
+                            <TableColumn fx:id="readingColumn"
+                                         text="Reading"
+                                         prefWidth="180.0"
+                                         minWidth="180.0"
+                                         maxWidth="180.0" />
+
+                            <TableColumn fx:id="translationColumn"
+                                         text="Translation"
+                                         prefWidth="200.0"
+                                         minWidth="200.0"
+                                         maxWidth="200.0" />
+                        </columns>
+                    </TableView>
+
+                    <Button text="Start practice"
+                            onAction="#startPractice" />
+                </VBox>
+
+                <VBox fx:id="practiceView"
+                      visible="false"
+                      managed="false"
+                      spacing="20.0"
+                      AnchorPane.leftAnchor="20.0"
+                      AnchorPane.rightAnchor="20.0"
+                      AnchorPane.topAnchor="90.0">
+
+                    <padding>
+                        <Insets top="20.0" right="20.0" bottom="20.0" left="20.0" />
+                    </padding>
+
+                    <Label fx:id="progressLabel"
+                           text="1 / 10" />
+
+                    <Label text="Translation:" />
+
+                    <Label fx:id="translationLabel"
+                           text="translation"
+                           wrapText="true">
+                        <font>
+                            <Font size="42.0" />
+                        </font>
+                    </Label>
+
+                    <Label fx:id="originalLabel"
+                           text=""
+                           wrapText="true">
+                        <font>
+                            <Font size="30.0" />
+                        </font>
+                    </Label>
+
+                    <HBox spacing="10.0">
+                        <children>
+                            <Button fx:id="showOriginalButton"
+                                    text="Show original word"
+                                    onAction="#showOriginalWord" />
+
+                            <Button text="Next"
+                                    onAction="#nextWord" />
+                        </children>
+                    </HBox>
+                </VBox>
+
+                <VBox fx:id="completedView"
+                      visible="false"
+                      managed="false"
+                      spacing="20.0"
+                      AnchorPane.leftAnchor="20.0"
+                      AnchorPane.rightAnchor="20.0"
+                      AnchorPane.topAnchor="100.0">
+
+                    <padding>
+                        <Insets top="20.0" right="20.0" bottom="20.0" left="20.0" />
+                    </padding>
+
+                    <Label text="You've practiced all chosen words.">
+                        <font>
+                            <Font size="28.0" />
+                        </font>
+                    </Label>
+
+                    <HBox spacing="10.0">
+                        <children>
+                            <Button text="Start again"
+                                    onAction="#startAgain" />
+
+                            <Button text="Select other words"
+                                    onAction="#selectOtherWords" />
+                        </children>
+                    </HBox>
+                </VBox>
+
+                <ImageView fx:id="bulldog"
+                           fitHeight="250.0"
+                           fitWidth="350.0"
+                           pickOnBounds="true"
+                           preserveRatio="true"
+                           AnchorPane.bottomAnchor="0.0"
+                           AnchorPane.rightAnchor="0.0" />
+            </children>
+        </AnchorPane>
+    </items>
+</SplitPane>

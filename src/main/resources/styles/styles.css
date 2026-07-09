@@ -1,0 +1,144 @@
+.root {
+    -fx-font-family: Verdana;
+}
+
+#homePane *.split-pane-divider {
+    -fx-padding: 0 1 0 1;
+    -fx-background-color: transparent;
+}
+
+.label {
+    -fx-text-fill: #000000;
+    -fx-wrap-text: true;
+}
+
+#welcomeLabel {
+    -fx-font-weight: bold;
+}
+
+#dataLabel {
+    -fx-font-weight: bold;
+    -fx-font-size: 30px;
+}
+
+#homePane *.button {
+    -fx-font-size: 16px;
+    -fx-background-radius: 0px;
+    -fx-font-family: Verdana;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color:  #4F8F66;
+    -fx-alignment: center-left;
+}
+
+#homePane *.button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #3F7654;
+}
+
+#scalesPane *.split-pane-divider {
+    -fx-padding: 0 1 0 1;
+    -fx-background-color: transparent;
+}
+
+#toolPane {
+       -fx-background-color:  #4F8F66;
+
+}
+
+#homeButton {
+    -fx-background-image: url("../graphics/home.png");
+    -fx-background-size: 35px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#exitButton {
+    -fx-background-image: url("../graphics/exit.png");
+    -fx-background-size: 35px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#settingsButton {
+    -fx-background-image: url("../graphics/settings.png");
+    -fx-background-size: 35px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#fullScreenButton:max {
+    -fx-background-image: url("../graphics/maximize.png");
+    -fx-background-size: 35px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#fullScreenButton:min {
+    -fx-background-image: url("../graphics/minimize.png");
+    -fx-background-size: 35px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#bulldog {
+    -fx-image: url("../graphics/bulldog_ball.png");
+}
+
+#loginErrorLabel {
+    -fx-text-fill: #FF0000;
+    -fx-font-size: 12px;
+}
+
+#signInButton {
+-fx-font-size: 12px;
+}
+
+#signUpButton {
+-fx-font-size: 12px;
+}
+
+#practiceWordsPane *.split-pane-divider {
+    -fx-padding: 0 1 0 1;
+    -fx-background-color: transparent;
+}
+
+#practiceWordsPane *.button {
+    -fx-font-size: 14px;
+    -fx-background-radius: 0px;
+    -fx-font-family: Verdana;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #4F8F66;
+}
+
+#practiceWordsPane *.button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #3F7654;
+}
+
+#selectionErrorLabel {
+    -fx-text-fill: #FF0000;
+    -fx-font-size: 12px;
+}
+
+#addWordsPane *.split-pane-divider {
+    -fx-padding: 0 1 0 1;
+    -fx-background-color: transparent;
+}
+
+#addWordsPane *.button {
+    -fx-font-size: 14px;
+    -fx-background-radius: 0px;
+    -fx-font-family: Verdana;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #4F8F66;
+}
+
+#addWordsPane *.button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #3F7654;
+}
+
+#addWordErrorLabel {
+    -fx-text-fill: #FF0000;
+    -fx-font-size: 12px;
+}
