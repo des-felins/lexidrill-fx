@@ -107,8 +107,8 @@
                            minHeight="24.0" />
 
                     <TableView fx:id="wordsTable"
-                               prefWidth="502.0"
-                               maxWidth="502.0"
+                               prefWidth="610.0"
+                               maxWidth="610.0"
                                prefHeight="320.0">
                         <columns>
                             <TableColumn fx:id="termColumn"
@@ -121,7 +121,7 @@
 
                             <TableColumn fx:id="translationColumn"
                                          text="Translation"
-                                         prefWidth="200.0" />
+                                         prefWidth="290.0" />
                         </columns>
                     </TableView>
                 </VBox>

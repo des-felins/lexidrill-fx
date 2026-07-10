@@ -19,7 +19,9 @@ public class LexiDrillFxApplication extends Application {
 
     @Override
     public void init() {
-        applicationContext = new SpringApplicationBuilder(SpringfxApplication.class).run();
+        applicationContext = new SpringApplicationBuilder(SpringfxApplication.class)
+                .main(SpringfxApplication.class)
+                .run(getParameters().getRaw().toArray(String[]::new));
     }
 
     @Override

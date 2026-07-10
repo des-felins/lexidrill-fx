@@ -92,6 +92,12 @@
                         <goals>
                             <goal>process-aot</goal>
                         </goals>
+                        <configuration>
+                            <mainClass>dev.cyberjar.springfx.SpringfxApplication</mainClass>
+                            <systemPropertyVariables>
+                                <springfx.aot.processing>true</springfx.aot.processing>
+                            </systemPropertyVariables>
+                        </configuration>
                     </execution>
                 </executions>
                 <configuration>
@@ -110,7 +116,7 @@
                     <plugin>
                         <groupId>org.graalvm.buildtools</groupId>
                         <artifactId>native-maven-plugin</artifactId>
-                        <version>0.11.3</version>
+                        <version>1.1.1</version>
                         <extensions>true</extensions>
                         <executions>
                             <execution>
