@@ -16,6 +16,7 @@ import org.springframework.stereotype.Component;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+@Lazy
 @Component
 public class HomeController implements Initializable {
 
@@ -37,7 +38,7 @@ public class HomeController implements Initializable {
 
     private final CurrentUser currentUser;
 
-    @Lazy
+  //  @Lazy
     public HomeController(StageManager stageManager, CurrentUser currentUser) {
         this.stageManager = stageManager;
         this.currentUser = currentUser;

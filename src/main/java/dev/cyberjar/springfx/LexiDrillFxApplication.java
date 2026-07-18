@@ -12,7 +12,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class LexiDrillFxApplication extends Application {
 
 
-    private static Stage stage;
+ //   private static Stage stage;
 
     private ConfigurableApplicationContext applicationContext;
     private StageManager stageManager;
@@ -27,13 +27,20 @@ public class LexiDrillFxApplication extends Application {
     @Override
     public void stop() {
         applicationContext.close();
-        stage.close();
+     //   stage.close();
     }
 
     @Override
     public void start(Stage primaryStage) {
-        stage = primaryStage;
-        stageManager = applicationContext.getBean(StageManager.class, primaryStage);
+
+        applicationContext
+                .getBeanFactory()
+                .registerSingleton("primaryStage", primaryStage);
+
+        stageManager = applicationContext.getBean(StageManager.class);
+
+//        stage = primaryStage;
+//        stageManager = applicationContext.getBean(StageManager.class, primaryStage);
         showLoginScene();
     }
 

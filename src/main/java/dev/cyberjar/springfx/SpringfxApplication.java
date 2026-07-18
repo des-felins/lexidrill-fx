@@ -1,6 +1,7 @@
 package dev.cyberjar.springfx;
 
 import dev.cyberjar.springfx.config.HibernateRuntimeHints;
+import dev.cyberjar.springfx.config.JavaFxResourceHints;
 import javafx.application.Application;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;
@@ -9,8 +10,10 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.annotation.ImportRuntimeHints;
 
 @SpringBootApplication
-@ImportRuntimeHints(HibernateRuntimeHints.class)
-public class SpringfxApplication {
+@ImportRuntimeHints({
+        HibernateRuntimeHints.class,
+        JavaFxResourceHints.class
+})public class SpringfxApplication {
 
     private static final String AOT_PROCESSING_PROPERTY = "springfx.aot.processing";
 

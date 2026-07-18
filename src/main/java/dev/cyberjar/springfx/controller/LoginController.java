@@ -24,6 +24,7 @@ import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
+@Lazy
 @Component
 public class LoginController implements Initializable {
 
@@ -50,7 +51,7 @@ public class LoginController implements Initializable {
 
     private final CurrentUser currentUser;
 
-    @Lazy
+  //  @Lazy
     public LoginController(StageManager stageManager, UserService userService, CurrentUser currentUser) {
         this.stageManager = stageManager;
         this.userService = userService;

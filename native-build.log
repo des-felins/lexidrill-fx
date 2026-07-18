@@ -1,0 +1,372 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< dev.cyberjar:springfx >------------------------
+[INFO] Building springfx 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.5.0:clean (default-clean) @ springfx ---
+[INFO] 
+[INFO] --- native:1.1.1:add-reachability-metadata (add-reachability-metadata) @ springfx ---
+[INFO] Downloaded GraalVM reachability metadata repository from file:/Users/catherine/.m2/repository/org/graalvm/buildtools/graalvm-reachability-metadata/1.1.1/graalvm-reachability-metadata-1.1.1-repository.zip
+[INFO] [graalvm reachability metadata repository for org.springframework.boot:spring-boot-starter-data-jpa:4.1.0]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.springframework.boot:spring-boot-starter-data-jpa:4.1.0]: Latest version not found!
+[INFO] [graalvm reachability metadata repository for org.springframework.boot:spring-boot-starter-data-jpa:4.1.0]: missing.
+[INFO] [graalvm reachability metadata repository for org.springframework.boot:spring-boot-starter:4.1.0]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.springframework.boot:spring-boot-starter:4.1.0]: Latest version not found!
+[INFO] [graalvm reachability metadata repository for org.springframework.boot:spring-boot-starter:4.1.0]: missing.
+[INFO] [graalvm reachability metadata repository for ch.qos.logback:logback-classic:1.5.34]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for ch.qos.logback:logback-classic:1.5.34]: Configuration directory is ch.qos.logback/logback-classic/1.5.26
+[INFO] [graalvm reachability metadata repository for ch.qos.logback:logback-core:1.5.34]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for ch.qos.logback:logback-core:1.5.34]: Configuration directory is ch.qos.logback/logback-core/1.5.26
+[INFO] [graalvm reachability metadata repository for org.slf4j:jul-to-slf4j:2.0.18]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.slf4j:jul-to-slf4j:2.0.18]: Configuration directory is org.slf4j/jul-to-slf4j/1.7.30
+[INFO] [graalvm reachability metadata repository for jakarta.annotation:jakarta.annotation-api:3.0.0]: Configuration directory is jakarta.annotation/jakarta.annotation-api/3.0.0
+[INFO] [graalvm reachability metadata repository for org.yaml:snakeyaml:2.6]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.yaml:snakeyaml:2.6]: Configuration directory is org.yaml/snakeyaml/2.0
+[INFO] [graalvm reachability metadata repository for com.zaxxer:HikariCP:7.0.2]: Configuration directory is com.zaxxer/HikariCP/7.0.2
+[INFO] [graalvm reachability metadata repository for org.slf4j:slf4j-api:2.0.18]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.slf4j:slf4j-api:2.0.18]: Configuration directory is org.slf4j/slf4j-api/1.7.36
+[INFO] [graalvm reachability metadata repository for org.springframework:spring-context:7.0.8]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.springframework:spring-context:7.0.8]: Configuration directory is org.springframework/spring-context/5.3.15
+[INFO] [graalvm reachability metadata repository for org.springframework:spring-expression:7.0.8]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.springframework:spring-expression:7.0.8]: Configuration directory is org.springframework/spring-expression/5.3.15
+[INFO] [graalvm reachability metadata repository for io.micrometer:micrometer-observation:1.17.0]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for io.micrometer:micrometer-observation:1.17.0]: Configuration directory is io.micrometer/micrometer-observation/1.16.4
+[INFO] [graalvm reachability metadata repository for io.micrometer:micrometer-commons:1.17.0]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for io.micrometer:micrometer-commons:1.17.0]: Configuration directory is io.micrometer/micrometer-commons/1.16.0
+[INFO] [graalvm reachability metadata repository for org.springframework:spring-aop:7.0.8]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.springframework:spring-aop:7.0.8]: Configuration directory is org.springframework/spring-aop/6.1.0
+[INFO] [graalvm reachability metadata repository for org.springframework:spring-tx:7.0.8]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.springframework:spring-tx:7.0.8]: Configuration directory is org.springframework/spring-tx/5.3.18
+[INFO] [graalvm reachability metadata repository for org.springframework:spring-aspects:7.0.8]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.springframework:spring-aspects:7.0.8]: Configuration directory is org.springframework/spring-aspects/5.3.31
+[INFO] [graalvm reachability metadata repository for org.aspectj:aspectjweaver:1.9.25.1]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.aspectj:aspectjweaver:1.9.25.1]: Configuration directory is org.aspectj/aspectjweaver/1.9.7
+[INFO] [graalvm reachability metadata repository for org.springframework.boot:spring-boot-jdbc:4.1.0]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.springframework.boot:spring-boot-jdbc:4.1.0]: Configuration directory is org.springframework.boot/spring-boot-jdbc/4.0.6
+[INFO] [graalvm reachability metadata repository for org.springframework.boot:spring-boot-transaction:4.1.0]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.springframework.boot:spring-boot-transaction:4.1.0]: Configuration directory is org.springframework.boot/spring-boot-transaction/4.0.6
+[INFO] [graalvm reachability metadata repository for jakarta.xml.bind:jakarta.xml.bind-api:4.0.5]: Configuration directory is jakarta.xml.bind/jakarta.xml.bind-api/4.0.0
+[INFO] [graalvm reachability metadata repository for commons-logging:commons-logging:1.3.6]: Configuration directory is commons-logging/commons-logging/1.2
+[INFO] [graalvm reachability metadata repository for org.jspecify:jspecify:1.0.0]: Configuration directory is org.jspecify/jspecify/1.0.0
+[INFO] [graalvm reachability metadata repository for org.apache.commons:commons-lang3:3.18.0]: Configuration directory is org.apache.commons/commons-lang3/3.11
+[INFO] [graalvm reachability metadata repository for org.xerial:sqlite-jdbc:3.49.1.0]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.xerial:sqlite-jdbc:3.49.1.0]: Configuration directory is org.xerial/sqlite-jdbc/3.40.0.0
+[INFO] [graalvm reachability metadata repository for org.hibernate.orm:hibernate-core:7.4.1.Final]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.hibernate.orm:hibernate-core:7.4.1.Final]: Configuration directory is org.hibernate.orm/hibernate-core/7.3.0.Final
+[INFO] [graalvm reachability metadata repository for jakarta.persistence:jakarta.persistence-api:3.2.0]: Configuration directory is jakarta.persistence/jakarta.persistence-api/3.2.0
+[INFO] [graalvm reachability metadata repository for org.hibernate.models:hibernate-models:1.1.1]: Configuration directory is org.hibernate.models/hibernate-models/1.0.0
+[INFO] [graalvm reachability metadata repository for org.glassfish.jaxb:jaxb-runtime:4.0.9]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.glassfish.jaxb:jaxb-runtime:4.0.9]: Configuration directory is org.glassfish.jaxb/jaxb-runtime/3.0.2
+[INFO] [graalvm reachability metadata repository for org.glassfish.jaxb:jaxb-core:4.0.9]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.glassfish.jaxb:jaxb-core:4.0.9]: Configuration directory is org.glassfish.jaxb/jaxb-core/3.0.0
+[INFO] [graalvm reachability metadata repository for org.eclipse.angus:angus-activation:2.0.3]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.eclipse.angus:angus-activation:2.0.3]: Configuration directory is org.eclipse.angus/angus-activation/1.0.0
+[INFO] [graalvm reachability metadata repository for org.glassfish.jaxb:txw2:4.0.9]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.glassfish.jaxb:txw2:4.0.9]: Configuration directory is org.glassfish.jaxb/txw2/2.3.1
+[INFO] [graalvm reachability metadata repository for com.sun.istack:istack-commons-runtime:4.1.2]: Configuration directory is com.sun.istack/istack-commons-runtime/4.0.0
+[INFO] [graalvm reachability metadata repository for jakarta.inject:jakarta.inject-api:2.0.1]: Configuration directory is jakarta.inject/jakarta.inject-api/2.0.0
+[INFO] [graalvm reachability metadata repository for org.antlr:antlr4-runtime:4.13.2]: Configuration directory is org.antlr/antlr4-runtime/4.10
+[INFO] [graalvm reachability metadata repository for org.jboss.logging:jboss-logging:3.6.3.Final]: Configuration directory is org.jboss.logging/jboss-logging/3.5.0.Final
+[INFO] [graalvm reachability metadata repository for org.apache.commons:commons-collections4:4.5.0]: Configuration directory is org.apache.commons/commons-collections4/4.4
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ springfx ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 14 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ springfx ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 27 source files with javac [debug parameters release 25] to target/classes
+[INFO] 
+[INFO] --- hibernate:7.4.1.Final:enhance (enhance) @ springfx ---
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/ApplicationConfig.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/JavaFxResourceHints.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/HibernateRuntimeHints.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/StageManager$1.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/DataSourceConfig.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/FxmlView$2.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/FxmlLoader.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/FxmlView$4.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/FxmlView$3.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/FxmlView.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/FxmlView$1.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/StageManager.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/HibernateConfig.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/user/UserRepository.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/user/UserService.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/user/CurrentUser.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/user/User.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/controller/ui/ToolbarController.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/controller/ui/LoginToolbarController.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/controller/HomeController.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/controller/PracticeWordsController.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/controller/LoginController.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/controller/PracticeWordsController$PracticeWordRow.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/controller/AddWordsController.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/SpringfxApplication.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/word/StudyWord.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/word/StudyWordRepository.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/word/StudyWordService.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/exception/UserExistsException.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/exception/ConstraintsException.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/exception/NotFoundException.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/event/SceneResizeEvent.class
+[INFO] Added file to source set: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/LexiDrillFxApplication.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/ApplicationConfig.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/JavaFxResourceHints.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/HibernateRuntimeHints.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/StageManager$1.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/DataSourceConfig.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/FxmlView$2.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/FxmlLoader.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/FxmlView$4.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/FxmlView$3.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/FxmlView.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/FxmlView$1.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/StageManager.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/HibernateConfig.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/user/UserRepository.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/user/UserService.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/user/CurrentUser.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/user/User.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/controller/ui/ToolbarController.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/controller/ui/LoginToolbarController.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/controller/HomeController.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/controller/PracticeWordsController.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/controller/LoginController.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/controller/PracticeWordsController$PracticeWordRow.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/controller/AddWordsController.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/SpringfxApplication.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/word/StudyWord.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/word/StudyWordRepository.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/word/StudyWordService.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/exception/UserExistsException.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/exception/ConstraintsException.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/exception/NotFoundException.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/event/SceneResizeEvent.class
+[INFO] Successfully discovered types for classes in file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/LexiDrillFxApplication.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/ApplicationConfig.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/JavaFxResourceHints.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/HibernateRuntimeHints.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/StageManager$1.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/DataSourceConfig.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/FxmlView$2.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/FxmlLoader.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/FxmlView$4.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/FxmlView$3.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/FxmlView.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/FxmlView$1.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/StageManager.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/config/HibernateConfig.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/user/UserRepository.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/user/UserService.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/user/CurrentUser.class
+[INFO] Successfully cleared the contents of file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/user/User.class
+[INFO] Successfully enhanced class file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/user/User.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/controller/ui/ToolbarController.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/controller/ui/LoginToolbarController.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/controller/HomeController.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/controller/PracticeWordsController.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/controller/LoginController.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/controller/PracticeWordsController$PracticeWordRow.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/controller/AddWordsController.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/SpringfxApplication.class
+[INFO] Successfully cleared the contents of file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/word/StudyWord.class
+[INFO] Successfully enhanced class file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/word/StudyWord.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/word/StudyWordRepository.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/word/StudyWordService.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/exception/UserExistsException.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/exception/ConstraintsException.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/exception/NotFoundException.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/event/SceneResizeEvent.class
+[INFO] Skipping file: /Users/catherine/work_bellsoft/projects/springfx/target/classes/dev/cyberjar/springfx/LexiDrillFxApplication.class
+[INFO] 
+[INFO] --- spring-boot:4.1.0:process-aot (process-aot) @ springfx ---
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.0)
+
+2026-07-10T21:05:37.604+03:00  INFO 99388 --- [springfx] [           main] d.cyberjar.springfx.SpringfxApplication  : Starting SpringfxApplication using Java 25.0.3 with PID 99388 (/Users/catherine/work_bellsoft/projects/springfx/target/classes started by catherine in /Users/catherine/work_bellsoft/projects/springfx)
+2026-07-10T21:05:37.606+03:00  INFO 99388 --- [springfx] [           main] d.cyberjar.springfx.SpringfxApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-07-10T21:05:38.094+03:00  INFO 99388 --- [springfx] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-10T21:05:38.137+03:00  INFO 99388 --- [springfx] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2026-07-10T21:05:38.525+03:00  INFO 99388 --- [springfx] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: AotMetamodel]
+2026-07-10T21:05:38.561+03:00  INFO 99388 --- [springfx] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-07-10T21:05:38.822+03:00  INFO 99388 --- [springfx] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-10T21:05:38.846+03:00  INFO 99388 --- [springfx] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: SpringDataJpaAotDialect
+	Database version: 0.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: <unknown>
+	JDBC fetch size: undefined/unknown
+	Pool: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-10T21:05:39.303+03:00  INFO 99388 --- [springfx] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-10T21:05:39.467+03:00  INFO 99388 --- [springfx] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ springfx ---
+[INFO] skip non existing resourceDirectory /Users/catherine/work_bellsoft/projects/springfx/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ springfx ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 25] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ springfx ---
+[WARNING]  Parameter 'systemProperties' is deprecated: use systemPropertyVariables instead
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.0:jar (default-jar) @ springfx ---
+[INFO] Building jar: /Users/catherine/work_bellsoft/projects/springfx/target/springfx-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:4.1.0:repackage (repackage) @ springfx ---
+[INFO] Attaching repackaged archive /Users/catherine/work_bellsoft/projects/springfx/target/springfx-0.0.1-SNAPSHOT-exec.jar with classifier exec
+[INFO] 
+[INFO] --- native:1.1.1:compile-no-fork (build-native) @ springfx ---
+[INFO] Found GraalVM installation from JAVA_HOME variable.
+[INFO] [graalvm reachability metadata repository for org.springframework.boot:spring-boot-starter-data-jpa:4.1.0]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.springframework.boot:spring-boot-starter-data-jpa:4.1.0]: Latest version not found!
+[INFO] [graalvm reachability metadata repository for org.springframework.boot:spring-boot-starter-data-jpa:4.1.0]: missing.
+[INFO] [graalvm reachability metadata repository for org.springframework.boot:spring-boot-starter:4.1.0]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.springframework.boot:spring-boot-starter:4.1.0]: Latest version not found!
+[INFO] [graalvm reachability metadata repository for org.springframework.boot:spring-boot-starter:4.1.0]: missing.
+[INFO] [graalvm reachability metadata repository for ch.qos.logback:logback-classic:1.5.34]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for ch.qos.logback:logback-classic:1.5.34]: Configuration directory is ch.qos.logback/logback-classic/1.5.26
+[INFO] [graalvm reachability metadata repository for ch.qos.logback:logback-core:1.5.34]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for ch.qos.logback:logback-core:1.5.34]: Configuration directory is ch.qos.logback/logback-core/1.5.26
+[INFO] [graalvm reachability metadata repository for org.slf4j:jul-to-slf4j:2.0.18]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.slf4j:jul-to-slf4j:2.0.18]: Configuration directory is org.slf4j/jul-to-slf4j/1.7.30
+[INFO] [graalvm reachability metadata repository for jakarta.annotation:jakarta.annotation-api:3.0.0]: Configuration directory is jakarta.annotation/jakarta.annotation-api/3.0.0
+[INFO] [graalvm reachability metadata repository for org.yaml:snakeyaml:2.6]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.yaml:snakeyaml:2.6]: Configuration directory is org.yaml/snakeyaml/2.0
+[INFO] [graalvm reachability metadata repository for com.zaxxer:HikariCP:7.0.2]: Configuration directory is com.zaxxer/HikariCP/7.0.2
+[INFO] [graalvm reachability metadata repository for org.slf4j:slf4j-api:2.0.18]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.slf4j:slf4j-api:2.0.18]: Configuration directory is org.slf4j/slf4j-api/1.7.36
+[INFO] [graalvm reachability metadata repository for org.springframework:spring-context:7.0.8]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.springframework:spring-context:7.0.8]: Configuration directory is org.springframework/spring-context/5.3.15
+[INFO] [graalvm reachability metadata repository for org.springframework:spring-expression:7.0.8]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.springframework:spring-expression:7.0.8]: Configuration directory is org.springframework/spring-expression/5.3.15
+[INFO] [graalvm reachability metadata repository for io.micrometer:micrometer-observation:1.17.0]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for io.micrometer:micrometer-observation:1.17.0]: Configuration directory is io.micrometer/micrometer-observation/1.16.4
+[INFO] [graalvm reachability metadata repository for io.micrometer:micrometer-commons:1.17.0]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for io.micrometer:micrometer-commons:1.17.0]: Configuration directory is io.micrometer/micrometer-commons/1.16.0
+[INFO] [graalvm reachability metadata repository for org.springframework:spring-aop:7.0.8]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.springframework:spring-aop:7.0.8]: Configuration directory is org.springframework/spring-aop/6.1.0
+[INFO] [graalvm reachability metadata repository for org.springframework:spring-tx:7.0.8]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.springframework:spring-tx:7.0.8]: Configuration directory is org.springframework/spring-tx/5.3.18
+[INFO] [graalvm reachability metadata repository for org.springframework:spring-aspects:7.0.8]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.springframework:spring-aspects:7.0.8]: Configuration directory is org.springframework/spring-aspects/5.3.31
+[INFO] [graalvm reachability metadata repository for org.aspectj:aspectjweaver:1.9.25.1]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.aspectj:aspectjweaver:1.9.25.1]: Configuration directory is org.aspectj/aspectjweaver/1.9.7
+[INFO] [graalvm reachability metadata repository for org.springframework.boot:spring-boot-jdbc:4.1.0]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.springframework.boot:spring-boot-jdbc:4.1.0]: Configuration directory is org.springframework.boot/spring-boot-jdbc/4.0.6
+[INFO] [graalvm reachability metadata repository for org.springframework.boot:spring-boot-transaction:4.1.0]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.springframework.boot:spring-boot-transaction:4.1.0]: Configuration directory is org.springframework.boot/spring-boot-transaction/4.0.6
+[INFO] [graalvm reachability metadata repository for jakarta.xml.bind:jakarta.xml.bind-api:4.0.5]: Configuration directory is jakarta.xml.bind/jakarta.xml.bind-api/4.0.0
+[INFO] [graalvm reachability metadata repository for commons-logging:commons-logging:1.3.6]: Configuration directory is commons-logging/commons-logging/1.2
+[INFO] [graalvm reachability metadata repository for org.jspecify:jspecify:1.0.0]: Configuration directory is org.jspecify/jspecify/1.0.0
+[INFO] [graalvm reachability metadata repository for org.apache.commons:commons-lang3:3.18.0]: Configuration directory is org.apache.commons/commons-lang3/3.11
+[INFO] [graalvm reachability metadata repository for org.xerial:sqlite-jdbc:3.49.1.0]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.xerial:sqlite-jdbc:3.49.1.0]: Configuration directory is org.xerial/sqlite-jdbc/3.40.0.0
+[INFO] [graalvm reachability metadata repository for org.hibernate.orm:hibernate-core:7.4.1.Final]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.hibernate.orm:hibernate-core:7.4.1.Final]: Configuration directory is org.hibernate.orm/hibernate-core/7.3.0.Final
+[INFO] [graalvm reachability metadata repository for jakarta.persistence:jakarta.persistence-api:3.2.0]: Configuration directory is jakarta.persistence/jakarta.persistence-api/3.2.0
+[INFO] [graalvm reachability metadata repository for org.hibernate.models:hibernate-models:1.1.1]: Configuration directory is org.hibernate.models/hibernate-models/1.0.0
+[INFO] [graalvm reachability metadata repository for org.glassfish.jaxb:jaxb-runtime:4.0.9]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.glassfish.jaxb:jaxb-runtime:4.0.9]: Configuration directory is org.glassfish.jaxb/jaxb-runtime/3.0.2
+[INFO] [graalvm reachability metadata repository for org.glassfish.jaxb:jaxb-core:4.0.9]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.glassfish.jaxb:jaxb-core:4.0.9]: Configuration directory is org.glassfish.jaxb/jaxb-core/3.0.0
+[INFO] [graalvm reachability metadata repository for org.eclipse.angus:angus-activation:2.0.3]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.eclipse.angus:angus-activation:2.0.3]: Configuration directory is org.eclipse.angus/angus-activation/1.0.0
+[INFO] [graalvm reachability metadata repository for org.glassfish.jaxb:txw2:4.0.9]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.glassfish.jaxb:txw2:4.0.9]: Configuration directory is org.glassfish.jaxb/txw2/2.3.1
+[INFO] [graalvm reachability metadata repository for com.sun.istack:istack-commons-runtime:4.1.2]: Configuration directory is com.sun.istack/istack-commons-runtime/4.0.0
+[INFO] [graalvm reachability metadata repository for jakarta.inject:jakarta.inject-api:2.0.1]: Configuration directory is jakarta.inject/jakarta.inject-api/2.0.0
+[INFO] [graalvm reachability metadata repository for org.antlr:antlr4-runtime:4.13.2]: Configuration directory is org.antlr/antlr4-runtime/4.10
+[INFO] [graalvm reachability metadata repository for org.jboss.logging:jboss-logging:3.6.3.Final]: Configuration directory is org.jboss.logging/jboss-logging/3.5.0.Final
+[INFO] [graalvm reachability metadata repository for org.apache.commons:commons-collections4:4.5.0]: Configuration directory is org.apache.commons/commons-collections4/4.4
+[WARNING] No jdk toolchain configuration found
+[INFO] Executing: /Library/Java/LibericaNativeImageKit/liberica-vm-full-25.0.3-openjdk25/Contents/Home/bin/native-image -cp /Users/catherine/work_bellsoft/projects/springfx/target/classes:/Users/catherine/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/4.1.0/spring-boot-starter-data-jpa-4.1.0.jar:/Users/catherine/.m2/repository/org/springframework/boot/spring-boot-starter/4.1.0/spring-boot-starter-4.1.0.jar:/Users/catherine/.m2/repository/org/springframework/boot/spring-boot-starter-logging/4.1.0/spring-boot-starter-logging-4.1.0.jar:/Users/catherine/.m2/repository/ch/qos/logback/logback-classic/1.5.34/logback-classic-1.5.34.jar:/Users/catherine/.m2/repository/ch/qos/logback/logback-core/1.5.34/logback-core-1.5.34.jar:/Users/catherine/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.25.4/log4j-to-slf4j-2.25.4.jar:/Users/catherine/.m2/repository/org/apache/logging/log4j/log4j-api/2.25.4/log4j-api-2.25.4.jar:/Users/catherine/.m2/repository/org/slf4j/jul-to-slf4j/2.0.18/jul-to-slf4j-2.0.18.jar:/Users/catherine/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/4.1.0/spring-boot-autoconfigure-4.1.0.jar:/Users/catherine/.m2/repository/jakarta/annotation/jakarta.annotation-api/3.0.0/jakarta.annotation-api-3.0.0.jar:/Users/catherine/.m2/repository/org/yaml/snakeyaml/2.6/snakeyaml-2.6.jar:/Users/catherine/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/4.1.0/spring-boot-starter-jdbc-4.1.0.jar:/Users/catherine/.m2/repository/com/zaxxer/HikariCP/7.0.2/HikariCP-7.0.2.jar:/Users/catherine/.m2/repository/org/slf4j/slf4j-api/2.0.18/slf4j-api-2.0.18.jar:/Users/catherine/.m2/repository/org/springframework/boot/spring-boot-data-jpa/4.1.0/spring-boot-data-jpa-4.1.0.jar:/Users/catherine/.m2/repository/org/springframework/boot/spring-boot-data-commons/4.1.0/spring-boot-data-commons-4.1.0.jar:/Users/catherine/.m2/repository/org/springframework/boot/spring-boot-persistence/4.1.0/spring-boot-persistence-4.1.0.jar:/Users/catherine/.m2/repository/org/springframework/data/spring-data-commons/4.1.0/spring-data-commons-4.1.0.jar:/Users/catherine/.m2/repository/org/springframework/boot/spring-boot-hibernate/4.1.0/spring-boot-hibernate-4.1.0.jar:/Users/catherine/.m2/repository/org/springframework/boot/spring-boot-jpa/4.1.0/spring-boot-jpa-4.1.0.jar:/Users/catherine/.m2/repository/org/springframework/spring-orm/7.0.8/spring-orm-7.0.8.jar:/Users/catherine/.m2/repository/org/springframework/data/spring-data-jpa/4.1.0/spring-data-jpa-4.1.0.jar:/Users/catherine/.m2/repository/org/springframework/spring-context/7.0.8/spring-context-7.0.8.jar:/Users/catherine/.m2/repository/org/springframework/spring-expression/7.0.8/spring-expression-7.0.8.jar:/Users/catherine/.m2/repository/io/micrometer/micrometer-observation/1.17.0/micrometer-observation-1.17.0.jar:/Users/catherine/.m2/repository/io/micrometer/micrometer-commons/1.17.0/micrometer-commons-1.17.0.jar:/Users/catherine/.m2/repository/org/springframework/spring-aop/7.0.8/spring-aop-7.0.8.jar:/Users/catherine/.m2/repository/org/springframework/spring-tx/7.0.8/spring-tx-7.0.8.jar:/Users/catherine/.m2/repository/org/springframework/spring-beans/7.0.8/spring-beans-7.0.8.jar:/Users/catherine/.m2/repository/org/springframework/spring-aspects/7.0.8/spring-aspects-7.0.8.jar:/Users/catherine/.m2/repository/org/aspectj/aspectjweaver/1.9.25.1/aspectjweaver-1.9.25.1.jar:/Users/catherine/.m2/repository/org/springframework/boot/spring-boot-jdbc/4.1.0/spring-boot-jdbc-4.1.0.jar:/Users/catherine/.m2/repository/org/springframework/boot/spring-boot/4.1.0/spring-boot-4.1.0.jar:/Users/catherine/.m2/repository/org/springframework/boot/spring-boot-sql/4.1.0/spring-boot-sql-4.1.0.jar:/Users/catherine/.m2/repository/org/springframework/boot/spring-boot-transaction/4.1.0/spring-boot-transaction-4.1.0.jar:/Users/catherine/.m2/repository/org/springframework/spring-jdbc/7.0.8/spring-jdbc-7.0.8.jar:/Users/catherine/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.5/jakarta.xml.bind-api-4.0.5.jar:/Users/catherine/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.4/jakarta.activation-api-2.1.4.jar:/Users/catherine/.m2/repository/org/springframework/spring-core/7.0.8/spring-core-7.0.8.jar:/Users/catherine/.m2/repository/commons-logging/commons-logging/1.3.6/commons-logging-1.3.6.jar:/Users/catherine/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/catherine/.m2/repository/org/apache/commons/commons-lang3/3.18.0/commons-lang3-3.18.0.jar:/Users/catherine/.m2/repository/org/xerial/sqlite-jdbc/3.49.1.0/sqlite-jdbc-3.49.1.0.jar:/Users/catherine/.m2/repository/org/hibernate/orm/hibernate-community-dialects/7.4.1.Final/hibernate-community-dialects-7.4.1.Final.jar:/Users/catherine/.m2/repository/org/hibernate/orm/hibernate-core/7.4.1.Final/hibernate-core-7.4.1.Final.jar:/Users/catherine/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.2.0/jakarta.persistence-api-3.2.0.jar:/Users/catherine/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/catherine/.m2/repository/org/hibernate/models/hibernate-models/1.1.1/hibernate-models-1.1.1.jar:/Users/catherine/.m2/repository/net/bytebuddy/byte-buddy/1.18.10/byte-buddy-1.18.10.jar:/Users/catherine/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.9/jaxb-runtime-4.0.9.jar:/Users/catherine/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.9/jaxb-core-4.0.9.jar:/Users/catherine/.m2/repository/org/eclipse/angus/angus-activation/2.0.3/angus-activation-2.0.3.jar:/Users/catherine/.m2/repository/org/glassfish/jaxb/txw2/4.0.9/txw2-4.0.9.jar:/Users/catherine/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/Users/catherine/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/catherine/.m2/repository/org/antlr/antlr4-runtime/4.13.2/antlr4-runtime-4.13.2.jar:/Users/catherine/.m2/repository/org/jboss/logging/jboss-logging/3.6.3.Final/jboss-logging-3.6.3.Final.jar:/Users/catherine/.m2/repository/org/apache/commons/commons-collections4/4.5.0/commons-collections4-4.5.0.jar --no-fallback -o /Users/catherine/work_bellsoft/projects/springfx/target/springfx -H:ConfigurationFileDirectories=/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.yaml/snakeyaml/2.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/jakarta.inject/jakarta.inject-api/2.0.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.hibernate.models/hibernate-models/1.0.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/com.sun.istack/istack-commons-runtime/4.0.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/com.zaxxer/HikariCP/7.0.2,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/ch.qos.logback/logback-classic/1.5.26,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.glassfish.jaxb/txw2/2.3.1,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.glassfish.jaxb/jaxb-core/3.0.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/io.micrometer/micrometer-observation/1.16.4,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.springframework.boot/spring-boot-jdbc/4.0.6,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.springframework/spring-aop/6.1.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.slf4j/jul-to-slf4j/1.7.30,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.apache.commons/commons-collections4/4.4,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/commons-logging/commons-logging/1.2,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/jakarta.persistence/jakarta.persistence-api/3.2.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.glassfish.jaxb/jaxb-runtime/3.0.2,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/ch.qos.logback/logback-core/1.5.26,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.apache.commons/commons-lang3/3.11,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.springframework/spring-tx/5.3.18,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/jakarta.annotation/jakarta.annotation-api/3.0.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.eclipse.angus/angus-activation/1.0.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.aspectj/aspectjweaver/1.9.7,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.jspecify/jspecify/1.0.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.hibernate.orm/hibernate-core/7.3.0.Final,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.springframework/spring-aspects/5.3.31,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/io.micrometer/micrometer-commons/1.16.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.xerial/sqlite-jdbc/3.40.0.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.slf4j/slf4j-api/1.7.36,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/jakarta.xml.bind/jakarta.xml.bind-api/4.0.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.antlr/antlr4-runtime/4.10,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.jboss.logging/jboss-logging/3.5.0.Final,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.springframework/spring-expression/5.3.15,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.springframework.boot/spring-boot-transaction/4.0.6,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.springframework/spring-context/5.3.15,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.yaml/snakeyaml/2.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/jakarta.inject/jakarta.inject-api/2.0.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.hibernate.models/hibernate-models/1.0.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/com.sun.istack/istack-commons-runtime/4.0.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/com.zaxxer/HikariCP/7.0.2,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/ch.qos.logback/logback-classic/1.5.26,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.glassfish.jaxb/txw2/2.3.1,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.glassfish.jaxb/jaxb-core/3.0.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/io.micrometer/micrometer-observation/1.16.4,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.springframework.boot/spring-boot-jdbc/4.0.6,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.springframework/spring-aop/6.1.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.slf4j/jul-to-slf4j/1.7.30,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.apache.commons/commons-collections4/4.4,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/commons-logging/commons-logging/1.2,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/jakarta.persistence/jakarta.persistence-api/3.2.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.glassfish.jaxb/jaxb-runtime/3.0.2,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/ch.qos.logback/logback-core/1.5.26,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.apache.commons/commons-lang3/3.11,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.springframework/spring-tx/5.3.18,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/jakarta.annotation/jakarta.annotation-api/3.0.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.eclipse.angus/angus-activation/1.0.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.aspectj/aspectjweaver/1.9.7,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.jspecify/jspecify/1.0.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.hibernate.orm/hibernate-core/7.3.0.Final,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.springframework/spring-aspects/5.3.31,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/io.micrometer/micrometer-commons/1.16.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.xerial/sqlite-jdbc/3.40.0.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.slf4j/slf4j-api/1.7.36,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/jakarta.xml.bind/jakarta.xml.bind-api/4.0.0,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.antlr/antlr4-runtime/4.10,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.jboss.logging/jboss-logging/3.5.0.Final,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.springframework/spring-expression/5.3.15,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.springframework.boot/spring-boot-transaction/4.0.6,/Users/catherine/work_bellsoft/projects/springfx/target/graalvm-reachability-metadata/adc0abac4e265cb0ba30ef38b7432eb9a91e3b90/org.springframework/spring-context/5.3.15 --add-modules=javafx.controls,javafx.fxml --enable-native-access=javafx.graphics,ALL-UNNAMED dev.cyberjar.springfx.SpringfxApplication
+Warning: The option '-H:ServiceLoaderFeatureExcludeServices=org.hibernate.bytecode.spi.BytecodeProvider' is experimental and must be enabled via '-H:+UnlockExperimentalVMOptions' in the future.
+Warning: Please re-evaluate whether any experimental option is required, and either remove or unlock it. The build output lists all active experimental options, including where they come from and possible alternatives. If you think an experimental option should be considered as stable, please file an issue.
+========================================================================================================================
+GraalVM Native Image: Generating 'springfx' (executable)...
+========================================================================================================================
+For detailed information and explanations on the build output, visit:
+https://github.com/oracle/graal/blob/master/docs/reference-manual/native-image/BuildOutput.md
+------------------------------------------------------------------------------------------------------------------------
+[1/8] Initializing...                                                                                    (7.6s @ 0.24GB)
+ Java version: 25.0.3+12-LTS, vendor version: Liberica-NIK-25.0.3-2
+ Graal compiler: optimization level: 2, target machine: armv8.1-a
+ C compiler: cc (apple, arm64, 16.0.0)
+ Garbage collector: Serial GC (max heap size: 80% of RAM)
+ 5 user-specific feature(s):
+ - com.oracle.svm.thirdparty.gson.GsonFeature
+ - org.eclipse.angus.activation.nativeimage.AngusActivationFeature
+ - org.springframework.aot.nativex.feature.PreComputeFieldFeature
+ - org.springframework.data.core.TypedPropertyPathFeature
+ - org.sqlite.nativeimage.SqliteJdbcFeature
+------------------------------------------------------------------------------------------------------------------------
+ 1 experimental option(s) unlocked:
+ - '-H:ServiceLoaderFeatureExcludeServices' (origin(s): 'META-INF/native-image/org.springframework/spring-orm/native-image.properties' in 'file:///Users/catherine/.m2/repository/org/springframework/spring-orm/7.0.8/spring-orm-7.0.8.jar')
+------------------------------------------------------------------------------------------------------------------------
+Build resources:
+ - 12.98GB of memory (75.6% of system memory, less than 8GB of memory available)
+ - 8 thread(s) (100.0% of 8 available processor(s), determined at start)
+[2/8] Performing analysis...  [*******]                                                                 (60.1s @ 4.13GB)
+   37,067 types,  56,411 fields, and 185,455 methods found reachable
+   12,881 types,   7,319 fields, and  28,894 methods registered for reflection
+      239 types,     315 fields, and     350 methods registered for JNI access
+        0 downcalls and 0 upcalls registered for foreign access
+       20 native libraries: -framework Accelerate, -framework AppKit, -framework Carbon, -framework Cocoa, -framework CoreServices, -framework Foundation, -framework JavaRuntimeSupport, -framework Metal, -framework Network, -framework OpenGL, -framework QuartzCore, -framework Security, dl, m, pthread, stdc++, z
+[3/8] Building universe...                                                                              (27.9s @ 4.91GB)
+[4/8] Parsing methods...      [****]                                                                    (15.6s @ 5.09GB)
+[5/8] Inlining methods...     [***]                                                                     (10.8s @ 7.42GB)
+[6/8] Compiling methods...    [*********]                                                               (91.7s @ 3.38GB)
+[7/8] Laying out methods...   [****]                                                                    (15.3s @ 4.80GB)
+[8/8] Creating image...       [***]                                                                      (9.4s @ 5.52GB)
+  84.79MB (49.52%) for code area:   126,488 compilation units
+  80.94MB (47.27%) for image heap:  661,853 objects and 967 resources
+   5.51MB ( 3.22%) for other data
+ 171.23MB in total image size, 171.23MB in total file size
+------------------------------------------------------------------------------------------------------------------------
+Top 10 origins of code area:                                Top 10 object types in image heap:
+  19.53MB hibernate-core-7.4.1.Final.jar                      24.01MB byte[] for code metadata
+  15.28MB java.desktop                                        10.19MB byte[] for java.lang.String
+  12.25MB java.base                                            9.97MB byte[] for embedded resources
+   5.05MB javafx.graphics                                      7.41MB com.oracle.svm.core.hub.DynamicHubCompanion
+   3.79MB java.xml                                             6.30MB java.lang.String
+   3.09MB svm.jar (Native Image)                               6.29MB java.lang.Class
+   3.04MB jdk.proxy4                                           2.60MB byte[] for reflection metadata
+   2.40MB spring-data-jpa-4.1.0.jar                            1.34MB c.o.svm.core.hub.DynamicHub$ReflectionMetadata
+   2.30MB aspectjweaver-1.9.25.1.jar                           1.31MB byte[] for general heap data
+   1.71MB spring-core-7.0.8.jar                                1.17MB java.lang.reflect.Method
+  15.52MB for 105 more packages                               10.35MB for 5866 more object types
+------------------------------------------------------------------------------------------------------------------------
+Recommendations:
+ FUTR: Use '--future-defaults=all' to prepare for future releases.
+ HEAP: Set max heap for improved and more predictable memory usage.
+ CPU:  Enable more CPU features with '-march=native' for improved performance.
+------------------------------------------------------------------------------------------------------------------------
+                       41.3s (16.9% of total time) in 633 GCs | Peak RSS: 5.36GB | CPU load: 4.45
+------------------------------------------------------------------------------------------------------------------------
+Build artifacts:
+ /Users/catherine/work_bellsoft/projects/springfx/target/springfx (executable)
+========================================================================================================================
+Finished generating 'springfx' in 4m 4s.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  04:12 min
+[INFO] Finished at: 2026-07-10T21:09:46+03:00
+[INFO] ------------------------------------------------------------------------

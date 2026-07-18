@@ -13,6 +13,7 @@ import org.springframework.stereotype.Component;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+@Lazy
 @Component
 public class ToolbarController implements Initializable {
 
@@ -33,7 +34,7 @@ public class ToolbarController implements Initializable {
     private static final PseudoClass maximizeIcon = PseudoClass.getPseudoClass("max");
     private static final PseudoClass minimizeIcon = PseudoClass.getPseudoClass("min");
 
-    @Lazy
+  //  @Lazy
     public ToolbarController(StageManager stageManager) {
 
         this.stageManager = stageManager;

@@ -3,7 +3,7 @@ package dev.cyberjar.springfx.config;
 
 import org.hibernate.cfg.AvailableSettings;
 import org.hibernate.community.dialect.SQLiteDialect;
-import org.springframework.boot.hibernate.autoconfigure.HibernatePropertiesCustomizer;
+import org.springframework.boot.autoconfigure.orm.jpa.HibernatePropertiesCustomizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
