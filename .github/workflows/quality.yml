@@ -36,7 +36,8 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: >
-          mvn -B -ntp sonar:sonar
+          mvn -B -ntp
+          org.sonarsource.scanner.maven:sonar-maven-plugin:5.8.0.7211:sonar
           -Dsonar.projectKey=des-felins_lexidrill-fx
           -Dsonar.organization=des-felins
           -Dsonar.host.url=https://sonarcloud.io
