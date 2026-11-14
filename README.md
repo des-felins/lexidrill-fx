@@ -111,6 +111,31 @@ discovery, so they run together without a separate UI job or opt-in profile.
 SonarQube Cloud's existing fork restrictions and quality gate, and the Trivy
 security scan, remain enabled.
 
+### Validation
+
+Validated on 2026-11-14 in the Linux ARM64 Docker Sandbox with Liberica Full
+25.0.5.0.3 (JavaFX 25.0.5.0.3), Maven 3.10.0 and TestFX 4.0.18. The complete
+`clean verify` command above passed under Xvfb. Surefire reported:
+
+| Tests | Executed | Passed | Failed | Errors | Skipped |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Service unit tests | 15 | 15 | 0 | 0 | 0 |
+| JavaFX controller tests | 3 | 3 | 0 | 0 | 0 |
+
+A temporary incorrect title assertion on the JavaFX Application Thread made
+Maven exit with code 1 (one test, one error, zero skipped); TestFX wraps the
+assertion failure in a runtime exception. The original assertion was restored
+before the final complete run. Running the initialization test without a display
+also exited with code 1 (`Unable to open DISPLAY`), with zero tests skipped.
+No test fixes or additional JavaFX module openings were needed. The sandbox
+required local Maven proxy settings and trust for its proxy certificate; neither
+changes the project's test or security configuration.
+
+Native macOS execution and a hosted GitHub Actions run have not been executed
+in this sandbox. The workflow's pull-request trigger and unconditional Xvfb
+verification step were checked locally; the SonarQube and Trivy checks were
+not run locally.
+
 Reference implementations reviewed:
 
 * [piano-basics-fx](https://github.com/des-felins/piano-basics-fx/tree/c0cd2e1f9286cd2e3898e27d24e48e40de1e1bb8)
