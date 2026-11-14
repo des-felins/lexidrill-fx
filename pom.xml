@@ -43,6 +43,12 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>org.testfx</groupId>
+            <artifactId>testfx-junit5</artifactId>
+            <version>4.0.18</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>3.18.0</version>
@@ -70,6 +76,8 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <failIfNoTests>true</failIfNoTests>
+                    <!-- TestFX initializes the toolkit through JavaFX's internal application API. -->
+                    <argLine>--add-opens=javafx.graphics/com.sun.javafx.application=ALL-UNNAMED</argLine>
                 </configuration>
             </plugin>
             <plugin>

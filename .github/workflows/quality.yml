@@ -15,18 +15,23 @@ jobs:
     runs-on: ubuntu-24.04
 
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Install Java 25 with JavaFX
-        uses: actions/setup-java@v6
+        uses: actions/setup-java@d1374f8ac74474200d16ef8ecee22c7ae7a51880 # v6.3.0
         with:
           distribution: liberica
           java-version: '25'
           java-package: jdk+fx
           cache: maven
 
+      - name: Install virtual display and JavaFX runtime libraries
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y xvfb xauth libgtk-3-0t64 libxtst6 libasound2t64
+
       - name: Verify
-        run: mvn -B -ntp verify
+        run: xvfb-run -a -s "-screen 0 1280x1024x24 -nolisten tcp" mvn -B -ntp verify
 
 
       - name: Analyze with SonarQube Cloud
@@ -48,7 +53,7 @@ jobs:
     runs-on: ubuntu-24.04
 
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Scan repository
         uses: aquasecurity/trivy-action@ed142fd0673e97e23eac54620cfb913e5ce36c25 # v0.36.0

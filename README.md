@@ -63,6 +63,88 @@ mvnw.cmd spring-boot:run
 
 The application should open as a desktop window.
 
+## Tests
+
+Use **Liberica JDK Full 25** for both Maven and its test JVM. JavaFX comes from
+the JDK, so its version follows the installed Full JDK; the `23.0.1` namespaces
+in FXML files are not dependency version declarations.
+
+On macOS, run the tests from a logged-in desktop session:
+
+```bash
+mvn -B -ntp clean verify
+```
+
+On Linux without a display, install Xvfb and the JavaFX runtime libraries
+(package names below are for Ubuntu 24.04):
+
+```bash
+sudo apt-get update
+sudo apt-get install -y xvfb xauth libgtk-3-0t64 libxtst6 libasound2t64
+xvfb-run -a -s "-screen 0 1280x1024x24 -nolisten tcp" mvn -B -ntp clean verify
+```
+
+The same Surefire run executes the existing service unit tests and
+`AddWordsControllerTest`. The UI tests load the production `add-words.fxml`,
+including its toolbar, and exercise the real controller and word service.
+Only the repository and the toolbar's stage manager are mocked. The test
+fixture starts JavaFX directly through TestFX, without a Spring application
+context or a database. The existing Maven AOT processing step remains enabled.
+
+UI tests cover initialization and table columns, entering and adding a word
+(including normalization, table refresh, form reset and clearing a previous
+error), and validation errors that preserve the form and existing rows.
+FXML loading and UI assertions run on the JavaFX Application Thread; TestFX
+drives the mouse and text input and manages the stage lifecycle. No fixed sleeps
+or display-dependent test skips are used. A missing display or an assertion
+failure fails the build. Surefire writes results to `target/surefire-reports`.
+
+Only `testfx-junit5:4.0.18` is added; it brings `testfx-core` transitively.
+JUnit 5, Mockito and assertion libraries already come from Spring Boot's test
+starter. Surefire opens `com.sun.javafx.application` for TestFX's toolkit
+initialization. Linux uses a normal JavaFX toolkit under Xvfb, with no Monocle
+dependency or headless profile; macOS uses its native desktop toolkit.
+
+The Quality workflow runs `verify` under Xvfb on pushes to `main` and pull
+requests targeting `main`. Both kinds of tests use Surefire's default `*Test`
+discovery, so they run together without a separate UI job or opt-in profile.
+SonarQube Cloud's existing fork restrictions and quality gate, and the Trivy
+security scan, remain enabled.
+
+### Validation
+
+Validated on 2026-11-14 in the Linux ARM64 Docker Sandbox with Liberica Full
+25.0.5.0.3 (JavaFX 25.0.5.0.3), Maven 3.10.0 and TestFX 4.0.18. The complete
+`clean verify` command above passed under Xvfb. Surefire reported:
+
+| Tests | Executed | Passed | Failed | Errors | Skipped |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Service unit tests | 15 | 15 | 0 | 0 | 0 |
+| JavaFX controller tests | 3 | 3 | 0 | 0 | 0 |
+
+A temporary incorrect title assertion on the JavaFX Application Thread made
+Maven exit with code 1 (one test, one error, zero skipped); TestFX wraps the
+assertion failure in a runtime exception. The original assertion was restored
+before the final complete run. Running the initialization test without a display
+also exited with code 1 (`Unable to open DISPLAY`), with zero tests skipped.
+No test fixes or additional JavaFX module openings were needed. The sandbox
+required local Maven proxy settings and trust for its proxy certificate; neither
+changes the project's test or security configuration.
+
+Native macOS execution and a hosted GitHub Actions run have not been executed
+in this sandbox. The workflow's pull-request trigger and unconditional Xvfb
+verification step were checked locally; the SonarQube and Trivy checks were
+not run locally.
+
+Reference implementations reviewed:
+
+* [piano-basics-fx](https://github.com/des-felins/piano-basics-fx/tree/c0cd2e1f9286cd2e3898e27d24e48e40de1e1bb8)
+  uses TestFX 4.0.18 with JUnit 5 and the JavaFX application package opening,
+  but starts Spring in its UI tests.
+* [raffle](https://github.com/code-with-bellsoft/raffle/tree/f0374bf6b68352ebd29165a188e67c8fea230c76)
+  uses TestFX/JUnit 5 with a Java 21 Monocle CI profile. Its Monocle dependency
+  and test-skipping defaults are not carried over here.
+
 ## Local database
 
 The app stores data in a local SQLite database:
