@@ -33,22 +33,22 @@ class StudyWordServiceTest {
 
     @Test
     void addsNormalizedActiveWordForCurrentUserAndReturnsSavedWord() {
-        StudyWord saved = new StudyWord(user, "猫", "ねこ", "cat");
+        StudyWord saved = new StudyWord(user, "狗", "gǒu", "dog");
         saved.setId(7L);
-        when(repository.findByUserIdAndTermIgnoreCaseAndActiveTrue(42L, "猫"))
+        when(repository.findByUserIdAndTermIgnoreCaseAndActiveTrue(42L, "狗"))
                 .thenReturn(Optional.empty());
         when(repository.save(any(StudyWord.class))).thenReturn(saved);
 
-        assertSame(saved, service.addWord("  猫  ", "  ねこ  ", "  cat  "));
+        assertSame(saved, service.addWord("  狗  ", "  gǒu  ", "  dog  "));
 
         ArgumentCaptor<StudyWord> captor = ArgumentCaptor.forClass(StudyWord.class);
-        verify(repository).findByUserIdAndTermIgnoreCaseAndActiveTrue(42L, "猫");
+        verify(repository).findByUserIdAndTermIgnoreCaseAndActiveTrue(42L, "狗");
         verify(repository).save(captor.capture());
         StudyWord word = captor.getValue();
         assertSame(user, word.getUser());
-        assertEquals("猫", word.getTerm());
-        assertEquals("ねこ", word.getReading());
-        assertEquals("cat", word.getTranslation());
+        assertEquals("狗", word.getTerm());
+        assertEquals("gǒu", word.getReading());
+        assertEquals("dog", word.getTranslation());
         assertTrue(word.isActive());
     }
 
@@ -58,7 +58,7 @@ class StudyWordServiceTest {
     void normalizesMissingReadingToEmptyString(String reading) {
         when(repository.save(any(StudyWord.class))).thenAnswer(call -> call.getArgument(0));
 
-        StudyWord word = service.addWord("cat", reading, "猫");
+        StudyWord word = service.addWord("dog", reading, "狗");
 
         assertEquals("", word.getReading());
     }
@@ -68,7 +68,7 @@ class StudyWordServiceTest {
     @ValueSource(strings = {" \t "})
     void rejectsBlankTermBeforeAccessingRepository(String term) {
         IllegalArgumentException error = assertThrows(IllegalArgumentException.class,
-                () -> service.addWord(term, null, "cat"));
+                () -> service.addWord(term, null, "dog"));
 
         assertEquals("Word must not be blank", error.getMessage());
         verifyNoInteractions(repository);
@@ -79,7 +79,7 @@ class StudyWordServiceTest {
     @ValueSource(strings = {" \t "})
     void rejectsBlankTranslationBeforeAccessingRepository(String translation) {
         IllegalArgumentException error = assertThrows(IllegalArgumentException.class,
-                () -> service.addWord("cat", null, translation));
+                () -> service.addWord("dog", null, translation));
 
         assertEquals("Translation must not be blank", error.getMessage());
         verifyNoInteractions(repository);
@@ -99,7 +99,7 @@ class StudyWordServiceTest {
     @Test
     void rejectsTermOverHundredCharacters() {
         IllegalArgumentException error = assertThrows(IllegalArgumentException.class,
-                () -> service.addWord("a".repeat(101), null, "cat"));
+                () -> service.addWord("a".repeat(101), null, "dog"));
 
         assertEquals("Value must not be longer than 100 characters", error.getMessage());
         verifyNoInteractions(repository);
@@ -108,7 +108,7 @@ class StudyWordServiceTest {
     @Test
     void rejectsTranslationOverHundredCharacters() {
         IllegalArgumentException error = assertThrows(IllegalArgumentException.class,
-                () -> service.addWord("cat", null, "a".repeat(101)));
+                () -> service.addWord("dog", null, "a".repeat(101)));
 
         assertEquals("Value must not be longer than 100 characters", error.getMessage());
         verifyNoInteractions(repository);
@@ -116,11 +116,11 @@ class StudyWordServiceTest {
 
     @Test
     void rejectsExistingActiveWordWithoutSaving() {
-        when(repository.findByUserIdAndTermIgnoreCaseAndActiveTrue(42L, "cat"))
-                .thenReturn(Optional.of(new StudyWord(user, "CAT", "", "猫")));
+        when(repository.findByUserIdAndTermIgnoreCaseAndActiveTrue(42L, "dog"))
+                .thenReturn(Optional.of(new StudyWord(user, "DOG", "", "狗")));
 
         IllegalArgumentException error = assertThrows(IllegalArgumentException.class,
-                () -> service.addWord(" cat ", null, "猫"));
+                () -> service.addWord(" dog ", null, "狗"));
 
         assertEquals("This word already exists in your list", error.getMessage());
         verify(repository, never()).save(any(StudyWord.class));
@@ -130,7 +130,7 @@ class StudyWordServiceTest {
     void rejectsAddingWordWhenSignedOut() {
         currentUser.clear();
 
-        assertThrows(IllegalStateException.class, () -> service.addWord("cat", null, "猫"));
+        assertThrows(IllegalStateException.class, () -> service.addWord("dog", null, "狗"));
 
         verifyNoInteractions(repository);
     }
